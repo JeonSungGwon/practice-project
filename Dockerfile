@@ -1,7 +1,7 @@
 FROM openjdk:11-jre-slim
 
-WORKDIR /app
+ARG JAR_FILE=build/libs/*.jar
 
-COPY target/my-spring-boot-app.jar my-spring-boot-app.jar
+COPY ${JAR_FILE} app.jar
 
-CMD ["java", "-jar", "my-spring-boot-app.jar"]
+CMD ["java", "-jar", "/app.jar"]
