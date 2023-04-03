@@ -30,7 +30,7 @@ public class Comment {
     public static Comment createComent(CommentDto dto, Article article) {
         // 예외 처리
         if (dto.getId() != null)
-            throw  new IllegalArgumentException("댓글 생성 실패! 댓글의 id가 없어야 합니다.");
+            throw  new IllegalArgumentException("댓글 생성 실패! 댓글의 id가 없어야함.");
         if (dto.getArticleId() != article.getId())
             throw new IllegalArgumentException("댓글 생성 실패! 게시글의 id가 잘못되었습니다.");
 
