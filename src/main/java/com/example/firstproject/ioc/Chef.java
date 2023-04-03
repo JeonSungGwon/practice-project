@@ -9,6 +9,7 @@ public class Chef {
     private IngredientFactory ingredientFactory;
 
     // 셰프가 식재료 공장과 협업하기 위한 DI
+    // 수정
     public Chef(IngredientFactory ingredientFactory) {
     this.ingredientFactory = ingredientFactory;
     }
